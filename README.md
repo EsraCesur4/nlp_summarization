@@ -2,23 +2,22 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-1.9+-red.svg)
-![Transformers](https://img.shields.io/badge/🤗%20Transformers-4.21+-yellow.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Transformers](https://img.shields.io/badge/%20Transformers-4.21+-yellow.svg)
 
 Transformer tabanlı modeller kullanarak CNN/DailyMail veri seti üzerinde otomatik haber özetleme sistemi.
 
-## 📋 Proje Özeti
+## Proje Özeti
 
 Bu proje, T5-small modeli kullanarak İngilizce haber metinlerini otomatik olarak özetleyen bir sistem geliştirmektedir. Hugging Face Transformers kütüphanesi ile CNN/DailyMail veri seti üzerinde fine-tuning yapılarak ROUGE metrikleri ile değerlendirilmektedir.
 
-### 🎯 Hedefler
+### Hedefler
 
 - **Model**: T5-small (alternatif: facebook/bart-base)
 - **Veri Seti**: CNN/DailyMail (3.0.0)
 - **Görev**: Article alanından summary alanını tahmin etme
 - **Değerlendirme**: ROUGE-1, ROUGE-2, ROUGE-L metrikleri
 
-## 🚀 Hızlı Başlangıç
+## Başlangıç
 
 ### Gereksinimler
 
@@ -60,7 +59,7 @@ mkdir data data\processed data\raw models models\checkpoints outputs outputs\pre
 mkdir -p data/{processed,raw} models/checkpoints outputs/{predictions,evaluation_results} logs
 ```
 
-### 🔧 Kullanım
+### Kullanım
 
 #### 1. Tam Pipeline (Önerilen)
 ```bash
@@ -99,15 +98,16 @@ jupyter notebook ozetleme_projesi.ipynb
 python inference.py
 ```
 
-## 📊 Model Performansı
+## Model Performansı
 
 Tipik ROUGE skorları (test veri seti üzerinde):
 
-| Metrik | Precision | Recall | F1-Score |
-|--------|-----------|--------|----------|
-| ROUGE-1 | 0.45 | 0.42 | 0.43 |
-| ROUGE-2 | 0.20 | 0.18 | 0.19 |
-| ROUGE-L | 0.35 | 0.33 | 0.34 |
+| Metrik  | F1-Score |
+|--------|---------|
+| ROUGE-1 |  0.3181 |
+| ROUGE-2 |  0.1204 |
+| ROUGE-L |  0.2250 |
+| ROUGE-Lsum | 0.2250 |
 
 *Not: Gerçek sonuçlar veri boyutu ve eğitim parametrelerine bağlı olarak değişebilir.*
 
@@ -140,7 +140,7 @@ nlp_ozetleme_projesi/
 └── 📁 logs/                       # Log dosyaları
 ```
 
-## ⚙️ Konfigürasyon
+## Konfigürasyon
 
 `config.py` dosyasında önemli parametreler:
 
@@ -161,7 +161,7 @@ VAL_SIZE = 1000
 TEST_SIZE = 1000
 ```
 
-## 📈 Sonuç Dosyaları
+## Sonuç Dosyaları
 
 Proje çalıştırıldıktan sonra oluşan önemli dosyalar:
 
@@ -172,7 +172,7 @@ Proje çalıştırıldıktan sonra oluşan önemli dosyalar:
 - `outputs/training_curves.png` - Eğitim grafikleri
 - `logs/` - Tüm işlem logları
 
-## 🔍 Örnek Kullanım
+## Örnek Kullanım
 
 ### Python Script ile
 ```python
@@ -198,38 +198,7 @@ python main.py --mode demo
 python inference.py
 ```
 
-## 🛠️ Sorun Giderme
-
-### Yaygın Hatalar
-
-**1. CUDA Hatası:**
-```bash
-# CPU kullanımına zorla
-export CUDA_VISIBLE_DEVICES=""
-python main.py
-```
-
-**2. Bellek Hatası:**
-```python
-# config.py içinde
-BATCH_SIZE = 2  # Daha küçük batch size
-TRAIN_SIZE = 1000  # Daha az veri
-```
-
-**3. Model İndirme Hatası:**
-```bash
-# Hugging Face cache temizle
-rm -rf ~/.cache/huggingface/
-```
-
-### Performans İpuçları
-
-- **GPU Kullanımı**: CUDA kurulu ise otomatik GPU kullanılır
-- **Bellek Optimizasyonu**: Batch size'ı düşürün
-- **Hız Optimizasyonu**: FP16 precision kullanın (GPU'da)
-- **Veri Boyutu**: İlk testler için küçük veri seti kullanın
-
-## 📚 Ek Kaynaklar
+## Ek Kaynaklar
 
 ### Model Mimarileri
 - [T5 Paper](https://arxiv.org/abs/1910.10683) - "Exploring the Limits of Transfer Learning"
@@ -242,35 +211,6 @@ rm -rf ~/.cache/huggingface/
 - [ROUGE Metrics](https://aclanthology.org/W04-1013/) - "ROUGE: A Package for Automatic Evaluation"
 
 ### Kütüphaneler
-- [🤗 Transformers](https://huggingface.co/transformers/) - Hugging Face Transformers
+- [Transformers](https://huggingface.co/transformers/) - Hugging Face Transformers
 - [PyTorch](https://pytorch.org/) - Deep Learning Framework
 - [Datasets](https://huggingface.co/docs/datasets/) - Hugging Face Datasets
-
-## 🤝 Katkıda Bulunma
-
-1. Fork yapın
-2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
-3. Commit yapın (`git commit -m 'Add amazing feature'`)
-4. Push yapın (`git push origin feature/amazing-feature`)
-5. Pull Request açın
-
-## 📄 Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosyasına bakın.
-
-## 📞 İletişim
-
-Sorularınız için:
-- Issue açın
-- E-posta gönderin
-- Pull request gönderin
-
-## 🙏 Teşekkürler
-
-- Hugging Face ekibine transformers kütüphanesi için
-- CNN ve Daily Mail veri seti sağlayıcılarına
-- PyTorch topluluğuna
-
----
-
-⭐ Proje yararlıysa yıldız vermeyi unutmayın!
