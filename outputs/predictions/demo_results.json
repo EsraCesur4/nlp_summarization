@@ -1,0 +1,71 @@
+[
+  {
+    "summary": "Large language models like GPT and T5 have revolutionized how computers understand and generate human language. These models are trained on massive datasets and use transformer architectures to achieve state-of-the-art performance on various tasks including text summarization, question answering, and machine translation. Researchers are now focusing on developing more efficient and responsible AI systems.",
+    "input_text": "Artificial intelligence has made remarkable progress in recent years, particularly in \n                natural language processing. Large language models like GPT and T5 have revolutionized \n                how computers understand and generate human language. These models are trained on massive \n                datasets and use transformer architectures to achieve state-of-the-art performance on \n                various tasks including text summarization, question answering, and machine translation. \n                However, concerns about bias, privacy, and the environmental impact of training these \n                large models have also emerged. Researchers are now focusing on developing more efficient \n                and responsible AI systems.",
+    "input_length": 760,
+    "input_tokens": 113,
+    "summary_length": 408,
+    "summary_tokens": 76,
+    "generation_params": {
+      "max_length": 128,
+      "min_length": 10,
+      "num_beams": 4,
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "no_repeat_ngram_size": 2,
+      "early_stopping": true,
+      "pad_token_id": 0
+    },
+    "timestamp": "2025-07-24T21:44:40.790481",
+    "model_name": "t5-small",
+    "error": null,
+    "demo_id": 1
+  },
+  {
+    "summary": "Rising global temperatures, melting ice caps, and extreme weather events are becoming increasingly frequent. Scientists warn that without immediate action to reduce greenhouse gas emissions, the consequences could be catastrophic. Renewable energy sources like solar and wind power becoming more cost-effective and widely adopted.",
+    "input_text": "Climate change continues to be one of the most pressing global challenges of our time. \n                Rising global temperatures, melting ice caps, and extreme weather events are becoming \n                increasingly frequent. Scientists warn that without immediate action to reduce greenhouse \n                gas emissions, the consequences could be catastrophic. Renewable energy sources like \n                solar and wind power are becoming more cost-effective and widely adopted. Many countries \n                have committed to achieving net-zero emissions by 2050, but experts argue that more \n                aggressive measures are needed.",
+    "input_length": 654,
+    "input_tokens": 100,
+    "summary_length": 330,
+    "summary_tokens": 57,
+    "generation_params": {
+      "max_length": 128,
+      "min_length": 10,
+      "num_beams": 4,
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "no_repeat_ngram_size": 2,
+      "early_stopping": true,
+      "pad_token_id": 0
+    },
+    "timestamp": "2025-07-24T21:44:42.641319",
+    "model_name": "t5-small",
+    "error": null,
+    "demo_id": 2
+  },
+  {
+    "summary": "Global economy has shown signs of recovery following COVID-19 pandemic. Supply chain disruptions that affected industries worldwide are gradually being resolved. Inflation rates have been a concern for many central banks, leading to adjustments in monetary policy.",
+    "input_text": "The global economy has shown signs of recovery following the challenges posed by the \n                COVID-19 pandemic. Supply chain disruptions that affected industries worldwide are \n                gradually being resolved. Inflation rates have been a concern for many central banks, \n                leading to adjustments in monetary policy. The technology sector has remained resilient, \n                with increased demand for digital services. Meanwhile, emerging markets are experiencing \n                varied recovery patterns, with some showing robust growth while others struggle with \n                debt and political instability.",
+    "input_length": 650,
+    "input_tokens": 100,
+    "summary_length": 264,
+    "summary_tokens": 54,
+    "generation_params": {
+      "max_length": 128,
+      "min_length": 10,
+      "num_beams": 4,
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "no_repeat_ngram_size": 2,
+      "early_stopping": true,
+      "pad_token_id": 0
+    },
+    "timestamp": "2025-07-24T21:44:44.421455",
+    "model_name": "t5-small",
+    "error": null,
+    "demo_id": 3
+  }
+]

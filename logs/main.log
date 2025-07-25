@@ -1,0 +1,159 @@
+2025-07-24 18:51:50,027 - __main__ - INFO - === TAM PÝPELÝNE BAÞLIYOR ===
+2025-07-24 18:51:50,027 - __main__ - INFO - Çalýþma ortamý hazýrlanýyor...
+2025-07-24 18:51:50,029 - __main__ - INFO - GPU bulunamadý, CPU kullanýlacak
+2025-07-24 18:51:50,029 - __main__ - INFO - Çalýþma ortamý hazýr!
+2025-07-24 18:51:50,029 - __main__ - INFO - === VERÝ ÖN ÝÞLEME BAÞLIYOR ===
+2025-07-24 18:51:52,738 - data_preprocessing - WARNING - Ýþlenmiþ veri yüklenemedi: No such files: 'C:/Users/USER/Downloads/NLP Özetleme Projesi/data/processed/train/dataset_info.json', nor 'C:/Users/USER/Downloads/NLP Özetleme Projesi/data/processed/train/state.json' found. Expected to load a `Dataset` object but provided path is not a `Dataset`.
+2025-07-24 18:51:52,738 - data_preprocessing - INFO - Veri ön iþleme baþlatýlýyor...
+2025-07-24 18:51:52,739 - data_preprocessing - INFO - CNN/DailyMail veri seti yükleniyor...
+2025-07-24 18:53:51,245 - data_preprocessing - INFO - Orijinal veri boyutlarý:
+2025-07-24 18:53:51,245 - data_preprocessing - INFO - Train: 287113
+2025-07-24 18:53:51,245 - data_preprocessing - INFO - Validation: 13368
+2025-07-24 18:53:51,245 - data_preprocessing - INFO - Test: 11490
+2025-07-24 18:53:51,248 - data_preprocessing - INFO - Kullanýlacak veri boyutlarý:
+2025-07-24 18:53:51,249 - data_preprocessing - INFO - Train: 5000
+2025-07-24 18:53:51,249 - data_preprocessing - INFO - Validation: 1000
+2025-07-24 18:53:51,249 - data_preprocessing - INFO - Test: 1000
+2025-07-24 18:53:51,249 - data_preprocessing - INFO - Veri ön iþleme yapýlýyor...
+2025-07-24 18:53:55,990 - data_preprocessing - INFO - Ýþlenmiþ veri kaydediliyor...
+2025-07-24 18:53:56,014 - data_preprocessing - INFO - Veri ön iþleme tamamlandý!
+2025-07-24 18:53:56,021 - __main__ - INFO - Veri ön iþleme baþarýyla tamamlandý!
+2025-07-24 18:53:56,022 - __main__ - INFO - Train: 5000, Val: 1000, Test: 1000
+2025-07-24 18:53:56,043 - __main__ - INFO - === MODEL EÐÝTÝMÝ BAÞLIYOR ===
+2025-07-24 18:53:56,562 - model_training - INFO - Model eðitimi baþlýyor...
+2025-07-24 18:53:56,562 - model_training - INFO - Model yükleniyor: t5-small
+2025-07-24 18:53:57,170 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-07-24 18:54:28,652 - model_training - INFO - CPU kullanýlýyor
+2025-07-24 18:54:28,653 - model_training - INFO - Model baþarýyla yüklendi!
+2025-07-24 18:54:28,653 - model_training - INFO - Trainer kuruluyor...
+2025-07-24 18:54:28,653 - model_training - ERROR - Eðitim hatasý: Seq2SeqTrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy'
+2025-07-24 18:54:28,653 - __main__ - ERROR - Model eðitimi hatasý: Seq2SeqTrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy'
+2025-07-24 18:54:28,653 - __main__ - ERROR - Pipeline hatasý: Seq2SeqTrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy'
+2025-07-24 18:57:22,951 - __main__ - INFO - Çalýþma ortamý hazýrlanýyor...
+2025-07-24 18:57:22,952 - __main__ - INFO - GPU bulunamadý, CPU kullanýlacak
+2025-07-24 18:57:22,954 - __main__ - INFO - Çalýþma ortamý hazýr!
+2025-07-24 18:57:22,954 - __main__ - INFO - === DEMO ÇIK ARIM BAÞLIYOR ===
+2025-07-24 18:57:22,954 - inference - INFO - Model yükleniyor: C:\Users\USER\Downloads\NLP Özetleme Projesi\models\final_model
+2025-07-24 18:57:22,954 - inference - ERROR - Model yükleme hatasý: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\USER\Downloads\NLP Özetleme Projesi\models\final_model'.
+2025-07-24 18:57:22,954 - __main__ - ERROR - Demo çýkarým hatasý: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\USER\Downloads\NLP Özetleme Projesi\models\final_model'.
+2025-07-24 19:07:18,018 - __main__ - INFO - Çalýþma ortamý hazýrlanýyor...
+2025-07-24 19:07:18,020 - __main__ - INFO - GPU bulunamadý, CPU kullanýlacak
+2025-07-24 19:07:18,020 - __main__ - INFO - Çalýþma ortamý hazýr!
+2025-07-24 19:07:18,020 - __main__ - INFO - === DEMO ÇIK ARIM BAÞLIYOR ===
+2025-07-24 19:07:18,020 - inference - INFO - Model yükleniyor: C:\Users\USER\Downloads\nlp_summarization_project\models\final_model
+2025-07-24 19:07:18,020 - inference - ERROR - Model yükleme hatasý: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\USER\Downloads\nlp_summarization_project\models\final_model'.
+2025-07-24 19:07:18,021 - __main__ - ERROR - Demo çýkarým hatasý: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\USER\Downloads\nlp_summarization_project\models\final_model'.
+2025-07-24 19:08:07,779 - __main__ - INFO - Çalýþma ortamý hazýrlanýyor...
+2025-07-24 19:08:07,780 - __main__ - INFO - GPU bulunamadý, CPU kullanýlacak
+2025-07-24 19:08:07,780 - __main__ - INFO - Çalýþma ortamý hazýr!
+2025-07-24 19:08:07,780 - __main__ - INFO - === DEMO ÇIK ARIM BAÞLIYOR ===
+2025-07-24 19:08:07,780 - inference - INFO - Model yükleniyor: C:\Users\USER\Downloads\nlp_summarization_project\models\final_model
+2025-07-24 19:08:07,782 - inference - ERROR - Model yükleme hatasý: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\USER\Downloads\nlp_summarization_project\models\final_model'.
+2025-07-24 19:08:07,782 - __main__ - ERROR - Demo çýkarým hatasý: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\USER\Downloads\nlp_summarization_project\models\final_model'.
+2025-07-24 19:09:49,852 - __main__ - INFO - Çalýþma ortamý hazýrlanýyor...
+2025-07-24 19:09:49,854 - __main__ - INFO - GPU bulunamadý, CPU kullanýlacak
+2025-07-24 19:09:49,854 - __main__ - INFO - Çalýþma ortamý hazýr!
+2025-07-24 19:09:49,854 - __main__ - INFO - === DEMO ÇIK ARIM BAÞLIYOR ===
+2025-07-24 19:09:49,854 - inference - INFO - Lokal model bulunamadý, pre-trained model kullanýlýyor: t5-small
+2025-07-24 19:09:51,205 - inference - INFO - Model CPU'da çalýþýyor
+2025-07-24 19:09:51,206 - inference - INFO - Model baþarýyla yüklendi!
+2025-07-24 19:09:51,206 - __main__ - INFO - Demo 1 özetleniyor...
+2025-07-24 19:09:53,331 - inference - INFO - Özet üretildi: 414 -> 140 karakter
+2025-07-24 19:09:53,331 - __main__ - INFO - Demo 2 özetleniyor...
+2025-07-24 19:09:54,713 - inference - INFO - Özet üretildi: 440 -> 45 karakter
+2025-07-24 19:09:54,713 - __main__ - INFO - Demo 3 özetleniyor...
+2025-07-24 19:09:56,101 - inference - INFO - Özet üretildi: 365 -> 105 karakter
+2025-07-24 19:09:56,101 - __main__ - INFO - Demo sonuçlarý kaydedildi: C:\Users\USER\Downloads\nlp_summarization_project\outputs\predictions\demo_results.json
+2025-07-24 19:09:56,101 - __main__ - INFO - Demo çýkarým baþarýyla tamamlandý!
+2025-07-24 19:25:06,229 - __main__ - INFO - Setting up working environment...
+2025-07-24 19:25:06,230 - __main__ - INFO - No GPU found, using CPU
+2025-07-24 19:25:06,230 - __main__ - INFO - Working environment ready!
+2025-07-24 19:25:06,230 - __main__ - INFO - === DEMO INFERENCE STARTING ===
+2025-07-24 19:25:06,230 - inference - INFO - Local model not found, using pre-trained model: t5-small
+2025-07-24 19:25:07,601 - inference - INFO - Model running on CPU
+2025-07-24 19:25:07,601 - inference - INFO - Model loaded successfully!
+2025-07-24 19:25:07,601 - __main__ - INFO - Summarizing demo 1...
+2025-07-24 19:25:09,033 - inference - INFO - Summary generated: 760 -> 408 characters
+2025-07-24 19:25:09,033 - __main__ - INFO - Summarizing demo 2...
+2025-07-24 19:25:10,190 - inference - INFO - Summary generated: 654 -> 361 characters
+2025-07-24 19:25:10,191 - __main__ - INFO - Summarizing demo 3...
+2025-07-24 19:25:11,754 - inference - INFO - Summary generated: 650 -> 387 characters
+2025-07-24 19:25:11,754 - __main__ - INFO - Demo results saved: C:\Users\USER\Downloads\nlp_summarization_project\outputs\predictions\demo_results.json
+2025-07-24 19:25:11,755 - __main__ - INFO - Demo inference completed successfully!
+2025-07-24 19:26:31,207 - __main__ - INFO - === FULL PIPELINE STARTING ===
+2025-07-24 19:26:31,207 - __main__ - INFO - Setting up working environment...
+2025-07-24 19:26:31,209 - __main__ - INFO - No GPU found, using CPU
+2025-07-24 19:26:31,209 - __main__ - INFO - Working environment ready!
+2025-07-24 19:26:31,209 - __main__ - INFO - === DATA PREPROCESSING STARTING ===
+2025-07-24 19:26:31,916 - data_preprocessing - INFO - Ýþlenmiþ veri baþarýyla yüklendi!
+2025-07-24 19:26:31,920 - __main__ - INFO - Data preprocessing completed successfully!
+2025-07-24 19:26:31,920 - __main__ - INFO - Train: 5000, Val: 1000, Test: 1000
+2025-07-24 19:26:31,929 - __main__ - INFO - === MODEL TRAINING STARTING ===
+2025-07-24 19:26:32,535 - model_training - INFO - Model eðitimi baþlýyor...
+2025-07-24 19:26:32,535 - model_training - INFO - Model yükleniyor: t5-small
+2025-07-24 19:26:33,121 - model_training - INFO - CPU kullanýlýyor
+2025-07-24 19:26:33,121 - model_training - INFO - Model baþarýyla yüklendi!
+2025-07-24 19:26:33,121 - model_training - INFO - Trainer kuruluyor...
+2025-07-24 19:26:33,121 - model_training - ERROR - Eðitim hatasý: Using the `Trainer` with `PyTorch` requires `accelerate>=0.26.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=0.26.0'`
+2025-07-24 19:26:33,121 - __main__ - ERROR - Model training error: Using the `Trainer` with `PyTorch` requires `accelerate>=0.26.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=0.26.0'`
+2025-07-24 19:26:33,121 - __main__ - ERROR - Pipeline error: Using the `Trainer` with `PyTorch` requires `accelerate>=0.26.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=0.26.0'`
+2025-07-24 19:27:27,059 - __main__ - INFO - === FULL PIPELINE STARTING ===
+2025-07-24 19:27:27,059 - __main__ - INFO - Setting up working environment...
+2025-07-24 19:27:27,061 - __main__ - INFO - No GPU found, using CPU
+2025-07-24 19:27:27,062 - __main__ - INFO - Working environment ready!
+2025-07-24 19:27:27,062 - __main__ - INFO - === DATA PREPROCESSING STARTING ===
+2025-07-24 19:27:27,939 - data_preprocessing - INFO - Ýþlenmiþ veri baþarýyla yüklendi!
+2025-07-24 19:27:27,940 - __main__ - INFO - Data preprocessing completed successfully!
+2025-07-24 19:27:27,940 - __main__ - INFO - Train: 5000, Val: 1000, Test: 1000
+2025-07-24 19:27:27,952 - __main__ - INFO - === MODEL TRAINING STARTING ===
+2025-07-24 19:27:28,577 - model_training - INFO - Model eðitimi baþlýyor...
+2025-07-24 19:27:28,577 - model_training - INFO - Model yükleniyor: t5-small
+2025-07-24 19:27:29,475 - model_training - INFO - CPU kullanýlýyor
+2025-07-24 19:27:29,475 - model_training - INFO - Model baþarýyla yüklendi!
+2025-07-24 19:27:29,476 - model_training - INFO - Trainer kuruluyor...
+2025-07-24 19:27:29,509 - model_training - INFO - Trainer baþarýyla kuruldu!
+2025-07-24 19:27:29,509 - model_training - INFO - Eðitim parametreleri:
+2025-07-24 19:27:29,510 - model_training - INFO - - Epoch sayýsý: 3
+2025-07-24 19:27:29,510 - model_training - INFO - - Batch size: 4
+2025-07-24 19:27:29,510 - model_training - INFO - - Learning rate: 5e-05
+2025-07-24 19:27:29,510 - model_training - INFO - - Toplam eðitim örneði: 5000
+2025-07-24 19:27:29,510 - model_training - INFO - - Toplam validasyon örneði: 1000
+2025-07-24 21:39:00,728 - model_training - INFO - Eðitim tamamlandý!
+2025-07-24 21:39:00,729 - model_training - INFO - Final train loss: 2.1278
+2025-07-24 21:39:01,245 - model_training - INFO - Model kaydedildi: C:\Users\USER\Downloads\nlp_summarization_project\models\final_model
+2025-07-24 21:39:03,051 - model_training - INFO - Eðitim grafikleri kaydedildi: C:\Users\USER\Downloads\nlp_summarization_project\outputs\training_curves.png
+2025-07-24 21:39:03,052 - model_training - INFO - Eðitim geçmiþi kaydedildi: C:\Users\USER\Downloads\nlp_summarization_project\outputs\training_history.json
+2025-07-24 21:39:03,052 - __main__ - INFO - Model training completed successfully!
+2025-07-24 21:39:03,052 - __main__ - INFO - Final train loss: 2.1278
+2025-07-24 21:39:03,121 - __main__ - INFO - === MODEL EVALUATION STARTING ===
+2025-07-24 21:39:03,122 - absl - INFO - Using default tokenizer.
+2025-07-24 21:39:03,125 - evaluation - INFO - Lokal model yükleniyor: C:\Users\USER\Downloads\nlp_summarization_project\models\final_model
+2025-07-24 21:39:03,358 - evaluation - INFO - Model baþarýyla yüklendi!
+2025-07-24 21:39:03,359 - evaluation - INFO - Deðerlendirme baþlýyor: 100 örnek
+2025-07-24 21:44:37,624 - evaluation - INFO - Deðerlendirme tamamlandý!
+2025-07-24 21:44:37,634 - evaluation - INFO - Sonuçlar kaydedildi: C:\Users\USER\Downloads\nlp_summarization_project\outputs\evaluation_results\evaluation_results.json
+2025-07-24 21:44:37,636 - evaluation - INFO - Özet rapor kaydedildi: C:\Users\USER\Downloads\nlp_summarization_project\outputs\evaluation_results\summary_report.txt
+2025-07-24 21:44:37,999 - evaluation - INFO - ROUGE grafikleri kaydedildi: C:\Users\USER\Downloads\nlp_summarization_project\outputs\evaluation_results\rouge_scores.png
+2025-07-24 21:44:38,000 - __main__ - INFO - === ROUGE SCORES ===
+2025-07-24 21:44:38,000 - __main__ - INFO - ROUGE1 F1-Score: 0.3181
+2025-07-24 21:44:38,000 - __main__ - INFO - ROUGE2 F1-Score: 0.1204
+2025-07-24 21:44:38,000 - __main__ - INFO - ROUGEL F1-Score: 0.2250
+2025-07-24 21:44:38,000 - __main__ - INFO - ROUGELSUM F1-Score: 0.2250
+2025-07-24 21:44:38,001 - __main__ - INFO - Model evaluation completed successfully!
+2025-07-24 21:44:38,055 - __main__ - INFO - === DEMO INFERENCE STARTING ===
+2025-07-24 21:44:38,057 - inference - INFO - Loading local model: C:\Users\USER\Downloads\nlp_summarization_project\models\final_model
+2025-07-24 21:44:38,158 - inference - INFO - Model running on CPU
+2025-07-24 21:44:38,159 - inference - INFO - Model loaded successfully!
+2025-07-24 21:44:38,159 - __main__ - INFO - Summarizing demo 1...
+2025-07-24 21:44:40,792 - inference - INFO - Summary generated: 760 -> 408 characters
+2025-07-24 21:44:40,792 - __main__ - INFO - Summarizing demo 2...
+2025-07-24 21:44:42,641 - inference - INFO - Summary generated: 654 -> 330 characters
+2025-07-24 21:44:42,642 - __main__ - INFO - Summarizing demo 3...
+2025-07-24 21:44:44,421 - inference - INFO - Summary generated: 650 -> 264 characters
+2025-07-24 21:44:44,422 - __main__ - INFO - Demo results saved: C:\Users\USER\Downloads\nlp_summarization_project\outputs\predictions\demo_results.json
+2025-07-24 21:44:44,422 - __main__ - INFO - Demo inference completed successfully!
+2025-07-24 21:44:44,475 - __main__ - INFO - === PIPELINE SUMMARY ===
+2025-07-24 21:44:44,475 - __main__ - INFO - Total duration: 2:17:17.415362
+2025-07-24 21:44:44,475 - __main__ - INFO - Training loss: 2.1278
+2025-07-24 21:44:44,475 - __main__ - INFO - ROUGE-L F1: 0.2250
+2025-07-24 21:44:44,475 - __main__ - INFO - === PIPELINE COMPLETED SUCCESSFULLY ===

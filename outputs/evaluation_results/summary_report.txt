@@ -1,0 +1,22 @@
+# DEĞERLENDIRME RAPORU
+==================================================
+
+Model: t5-small
+Değerlendirilen örnek sayısı: 100
+
+## ROUGE Skorları (F1-Score)
+------------------------------
+ROUGE1: 0.3181
+ROUGE2: 0.1204
+ROUGEL: 0.2250
+ROUGELSUM: 0.2250
+
+## En İyi Örnek
+ROUGE-L F1: 0.5500
+Referans: Authorities in the Indian city of Malegaon have asked residents to take a'mugshot' of their cattle. ...
+Üretilen: Police in the western state of Maharashtra have asked residents to take a'mugshot' of their cattle. ...
+
+## En Kötü Örnek
+ROUGE-L F1: 0.0519
+Referans: Bombing of targets in central Sanaa smashes residents' windows and doors. Hundreds killed in less th...
+Üretilen: Yemen's deposed President heaps scorn on top of the airstrikes. He fired his former Army chief of st...
