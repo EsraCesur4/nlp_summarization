@@ -123,7 +123,7 @@ nlp_ozetleme_projesi/
 ├── 📄 evaluation.py               # Model değerlendirme
 ├── 📄 inference.py                # Çıkarım ve demo
 ├── 📄 main.py                     # Ana koordinatör
-├── 📓 ozetleme_projesi.ipynb      # Jupyter notebook
+├── 📓 NLP_Summarization.ipynb     # Jupyter notebook
 ├── 📄 rapor.md                    # Proje raporu
 │
 ├── 📁 data/                       # Veri dosyaları
